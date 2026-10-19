@@ -1,5 +1,5 @@
-docker build -t lab1:v1 .
+docker build -t docker_digits .
 
-docker save lab1:v1 > my_image.tar
+docker save docker_digits > digits_train.tar
 
-docker run lab1:v1
+docker run docker_digits
