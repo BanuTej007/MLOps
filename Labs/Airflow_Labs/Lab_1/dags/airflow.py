@@ -1,7 +1,7 @@
 # Import necessary libraries and modules
 from airflow import DAG
-# from airflow.operators.python import PythonOperator
-from airflow.providers.standard.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator
+# from airflow.providers.standard.operators.python import PythonOperator
 from datetime import datetime, timedelta
 from src.lab import load_data, data_preprocessing, build_save_model, load_model_elbow
 
@@ -12,8 +12,8 @@ from src.lab import load_data, data_preprocessing, build_save_model, load_model_
 
 # Define default arguments for your DAG
 default_args = {
-    'owner': 'Ramin Mohammadi',
-    'start_date': datetime(2026, 1, 15),
+    'owner': 'Banu Teja Maram',
+    'start_date': datetime(2026, 10, 25),
     'retries': 0,  # Number of retries in case of task failure
     'retry_delay': timedelta(minutes=5),  # Delay before retries
 }
