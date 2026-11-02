@@ -117,11 +117,9 @@ Lab_1/
    mkdir -p ./logs ./plugins ./config
    echo "AIRFLOW_UID=$(id -u)" > .env
    ```
-
+   If you are on windows platform, replace the content of .env file with the following
    ```powershell
-   # Windows (PowerShell)
-   mkdir logs, plugins, config -Force
-   Set-Content -Path .env -Value "AIRFLOW_UID=50000" -Encoding ascii
+    AIRFLOW_UID=50000
    ```
 
 4. **Start Airflow:**
